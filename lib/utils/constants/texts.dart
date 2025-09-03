@@ -1,54 +1,67 @@
 class AppTexts {
   AppTexts._();
-  // -- OnBoarding Texts
-  static const String onBoardingTitle1 = "Welcome to BRH Store Fashion";
-  static const String onBoardingTitle2 = "Select Payment Method";
-  static const String onBoardingTitle3 = "Deliver at your door step";
+  static const String currency = '\$';
+
+  static const String onBoardingTitle1 = 'Welcome to UP Store';
+  static const String onBoardingTitle2 = 'Shop Everything You Love!';
+  static const String onBoardingTitle3 = 'Fast & Reliable Delivery!';
 
   static const String onBoardingSubTitle1 =
-      "Welcome to a World of Limitless Choices - Your Perfect Product Awaits!";
+      'Your one-stop destination for effortless and enjoyable shopping';
   static const String onBoardingSubTitle2 =
-      "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!";
+      'Discover top-quality products at the best prices with a seamless shopping experience';
   static const String onBoardingSubTitle3 =
-      "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!";
-  // -- Authentication Forms
-  static const String firstName = "First Name";
-  static const String lastName = "Last Name";
-  static const String email = "E-Mail";
-  static const String password = "Password";
-  static const String newPassword = "New Password";
-  static const String username = "Username";
-  static const String phoneNo = "Phone Number";
-  static const String rememberMe = "Remember Me";
-  static const String forgetPassword = "Forget Password?";
-  static const String signIn = "Sign In";
-  static const String createAccount = "Create Account";
-  static const String orSignInWith = "or sign in with";
-  static const String orSignUpWith = "or sign up with";
-  static const String iAgreeTo = "I agree to";
-  static const String privacyPolicy = "Privacy Policy";
-  static const String termsOfUse = "Terms of use";
-  static const String verificationCode = "verificationCode";
-  static const String resendEmail = "Resend Email";
-  static const String resendEmailIn = "Resend email in";
-  // -- Authentication Headings
-  static const String loginTitle = "Welcome back";
+      'Get your favorite items delivered to your doorstep, anytime, anywhere';
+
+  // Login Screen
+  static const String loginTitle = 'Shop Smarter';
   static const String loginSubTitle =
-      "Discover Limitless Choices and Unmatched Convenience.";
-  static const String signupTitle = "Let’s create your account";
-  static const String forgetPasswordTitle = "Forget password";
+      'Log in to Access Exclusive Deals and Simplify Your Shopping Experience';
+  static const String email = 'Email';
+  static const String password = 'Password';
+  static const String rememberMe = 'Remember Me';
+  static const String forgetPassword = 'Forget Password';
+  static const String signIn = 'Sign In';
+  static const String createAccount = 'Create Account';
+  static const String orSignInWith = 'Or Sign In With';
+
+  // SignUp Screen
+  static const String signupTitle = 'Let’s Get You Registered';
+  static const String firstName = 'First Name';
+  static const String lastName = 'Last Name';
+  static const String phoneNumber = 'Phone Number';
+  static const String iAgreeTo = 'I agree to';
+  static const String privacyPolicy = 'Privacy Policy';
+  static const String and = 'and';
+  static const String termsOfUse = 'Terms of use';
+  static const String orSignupWith = 'Or Sign up With';
+
+  // Forget Password Screen
+  static const String forgetPasswordTitle = 'Forget Password';
   static const String forgetPasswordSubTitle =
-      "Don’t worry sometimes people can forget too, enter your email and we will send you a password reset link.";
-  static const String changeYourPasswordTitle = "Password Reset Email Sent";
-  static const String changeYourPasswordSubTitle =
-      "Your Account Security is Our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
-  static const String confirmEmail = "Verify your email address!";
-  static const String confirmEmailSubTitle =
-      "Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers.";
-  static const String emailNotReceivedMessage =
-      "Didn’t get the email? Check your junk/spam or resend it.";
-  static const String yourAccountCreatedTitle =
-      "Your account successfully created!";
-  static const String yourAccountCreatedSubTitle =
-      "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
+      'No worries! Enter your registered email address, and we’ll help you reset your password';
+  static const String submit = 'Submit';
+
+  // Reset Password Screen
+  static const String resetPasswordTitle = 'Password Reset Email Sent';
+  static const String resetPasswordSubTitle =
+      'We’ve sent a password reset link to your email. Please check your inbox and follow the instructions to reset your password';
+  static const String done = 'Done';
+
+  // Verify Email Screen
+  static const String verifyEmailTitle = 'Verify your email address!';
+  static const String verifyEmailSubTitle =
+      'We’ve sent a verification link to your email. Please check your inbox and click the link to verify your account';
+  static const String Continue = 'Continue';
+  static const String resendEmail = 'Resend Email';
+
+  // Account Created Successfully Screen
+  static const String accountCreatedTitle = 'Your account successfully created';
+  static const String accountCreatedSubTitle =
+      'Congratulations! Your account has been successfully created. You can now explore all the amazing features, start personalizing your experience, and enjoy seamless access to our services. Let’s get started!';
+
+  static const String homeAppBarTitle = 'Good Morning';
+  static const String homeAppBarSubTitle = 'Unknown Pro';
+  static const String searchBarTitle = 'Search in Store';
+  static const String popularCategories = 'Popular Categories';
 }

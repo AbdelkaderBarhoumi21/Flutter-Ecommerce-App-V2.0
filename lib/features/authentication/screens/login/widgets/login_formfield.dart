@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/button/elevated_button.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/button/outline_button.dart';
+import 'package:flutter_ecommerce_app_v2/features/authentication/screens/forget_password/forget_password_screen.dart';
+import 'package:flutter_ecommerce_app_v2/features/authentication/screens/signup/signup.dart';
+import 'package:flutter_ecommerce_app_v2/navigation_menu.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/texts.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class AppLoginForm extends StatelessWidget {
-  const AppLoginForm({
-    super.key,
-  });
+  const AppLoginForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,7 @@ class AppLoginForm extends StatelessWidget {
               ],
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => ForgetPasswordScreen()),
               child: Text(
                 AppTexts.forgetPassword,
                 style: Theme.of(context).textTheme.bodyMedium,
@@ -57,12 +59,12 @@ class AppLoginForm extends StatelessWidget {
         SizedBox(height: AppSizes.spaceBtwSections),
         //SignIn Button
         AppElevatedButton(
-          onPressed: () {},
+          onPressed: () => Get.to(() => NavigationMenu()),
           child: Text(AppTexts.signIn),
         ),
         SizedBox(height: AppSizes.spaceBtwItems / 2),
         AppOutlineButton(
-          onPressed: () {},
+          onPressed: () => Get.to(SignupScreen()),
           child: Text(AppTexts.createAccount),
         ),
       ],

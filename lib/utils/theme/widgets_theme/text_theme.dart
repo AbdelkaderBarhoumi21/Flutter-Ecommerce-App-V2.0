@@ -4,7 +4,7 @@ import 'package:flutter_ecommerce_app_v2/utils/constants/colors.dart';
 class AppTextTheme {
   AppTextTheme._();
   static TextTheme lightTextTheme = TextTheme(
-    headlineLarge: const TextStyle().copyWith(
+    headlineLarge: TextStyle().copyWith(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
       color: AppColors.dark,
@@ -49,7 +49,7 @@ class AppTextTheme {
     bodySmall: const TextStyle().copyWith(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
-      color: AppColors.dark.withOpacity(0.5),
+      color: AppColors.dark.withValues(alpha: 0.5),
     ),
 
     labelLarge: const TextStyle().copyWith(
@@ -60,9 +60,10 @@ class AppTextTheme {
     labelMedium: const TextStyle().copyWith(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
-      color: AppColors.dark.withOpacity(0.5),
+      color: AppColors.dark.withValues(alpha: 0.5),
     ),
   );
+
   static TextTheme darkTextTheme = TextTheme(
     headlineLarge: const TextStyle().copyWith(
       fontSize: 32.0,
@@ -109,7 +110,7 @@ class AppTextTheme {
     bodySmall: const TextStyle().copyWith(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
-      color: AppColors.light.withOpacity(0.5),
+      color: AppColors.light.withValues(alpha: 0.5),
     ),
 
     labelLarge: const TextStyle().copyWith(
@@ -120,7 +121,7 @@ class AppTextTheme {
     labelMedium: const TextStyle().copyWith(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
-      color: AppColors.light.withOpacity(0.5),
+      color: AppColors.light.withValues(alpha: 0.5),
     ),
   );
 }

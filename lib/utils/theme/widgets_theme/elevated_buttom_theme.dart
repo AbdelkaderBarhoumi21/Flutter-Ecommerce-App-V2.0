@@ -6,8 +6,6 @@ import '../../constants/sizes.dart';
 class AppElevatedButtonTheme {
   AppElevatedButtonTheme._(); //To avoid creating instances
 
-
-  /* -- Light Theme -- */
   static final lightElevatedButtonTheme  = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
@@ -15,14 +13,14 @@ class AppElevatedButtonTheme {
       backgroundColor: AppColors.primary,
       disabledForegroundColor: AppColors.darkGrey,
       disabledBackgroundColor: AppColors.buttonDisabled,
-      side: const BorderSide(color: AppColors.lightContainer),
+      side: const BorderSide(color: AppColors.light),
       padding: const EdgeInsets.symmetric(vertical: AppSizes.buttonHeight),
       textStyle: const TextStyle(fontSize: 16, color: AppColors.textWhite, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppSizes.buttonRadius)),
     ),
   );
 
-  /* -- Dark Theme -- */
+
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,

@@ -12,7 +12,7 @@ import 'package:flutter_ecommerce_app_v2/utils/theme/widgets_theme/text_theme.da
 class AppTheme {
   //private constructor
   AppTheme._();
-  static ThemeData ligthTheme = ThemeData(
+  static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Nunito',
     brightness: Brightness.light,
@@ -21,13 +21,14 @@ class AppTheme {
     textTheme: AppTextTheme.lightTextTheme,
     chipTheme: AppChipTheme.lightChipTheme,
     scaffoldBackgroundColor: AppColors.white,
-    appBarTheme: UAppBarTheme.ligthAppBarTheme,
+    appBarTheme: UAppBarTheme.lightAppBarTheme,
     checkboxTheme: AppCheckboxTheme.lightCheckboxTheme,
     bottomSheetTheme: AppBottomSheetTheme.lightBottomSheetTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: AppOutlinedButtonTheme.lightOutlinedButtonTheme,
     inputDecorationTheme: AppTextFormFieldTheme.lightInputDecorationTheme,
   );
+
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Nunito',
