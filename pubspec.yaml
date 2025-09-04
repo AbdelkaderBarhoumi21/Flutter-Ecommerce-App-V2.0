@@ -53,6 +53,9 @@ flutter:
     - assets/logo/
     - assets/images/
     - assets/animations/
+    - assets/banners/
+    - assets/icons/categories/
+    - assets/products/
   fonts:
     - family: 'Nunito'
       fonts:
