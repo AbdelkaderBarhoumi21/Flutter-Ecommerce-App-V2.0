@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/custom_shapes/rounded_container.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/icons/circular_icon.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/images/rounded_image.dart';
-import 'package:flutter_ecommerce_app_v2/common/widget/texts/brand_title_text.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/texts/brand_title_verify_icon.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/texts/product_price.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/texts/product_title_text.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/colors.dart';
-import 'package:flutter_ecommerce_app_v2/utils/constants/enums.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/image.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app_v2/utils/helpers/helper_functions.dart';
@@ -31,16 +29,19 @@ class AppProductCardVertical extends StatelessWidget {
           color: dark ? AppColors.darkerGrey : AppColors.white,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //thumbail favorite button and discount tag
             AppRoundedContainer(
-              width: 180,
+              height: 180,
               padding: const EdgeInsets.all(AppSizes.sm),
               backgroundColor: dark ? AppColors.dark : AppColors.light,
               child: Stack(
                 children: [
                   //thumbail
-                  AppRoundedImage(imageUrl: AppImages.productImage15),
+                  Center(
+                    child: AppRoundedImage(imageUrl: AppImages.productImage15),
+                  ),
                   //discount tag
                   Positioned(
                     top: 12.0,

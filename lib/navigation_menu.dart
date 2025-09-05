@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app_v2/features/shop/screens/home/home_screen.dart';
 import 'package:flutter_ecommerce_app_v2/features/shop/screens/store/store_screen.dart';
+import 'package:flutter_ecommerce_app_v2/features/shop/screens/whishlist/whishlist_screen.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app_v2/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
@@ -43,11 +44,12 @@ class NavigationMenu extends StatelessWidget {
 }
 
 class NavigationController extends GetxController {
+  static NavigationController get instance => Get.find();
   RxInt selectedIndex = 0.obs;
   List<Widget> screens = [
     const HomeScreen(),
     const StoreScreen(),
-    Container(color: Colors.blue),
+    const WhishlistScreen(),
     Container(color: Colors.green),
   ];
 }

@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_app_v2/common/widget/products/products_card/product_vertical_card.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/sizes.dart';
 
 class AppGridLayout extends StatelessWidget {
   const AppGridLayout({
     super.key,
     required this.itemCount,
-    this.mainAxisCount =268.8,
+    this.mainAxisExtent =268.8,
     required this.itemBuilder,
   });
 
   final int itemCount;
-  final double? mainAxisCount;
+  final double? mainAxisExtent;
   final Widget Function(BuildContext context, int index) itemBuilder;
 
   @override
@@ -25,7 +24,7 @@ class AppGridLayout extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: AppSizes.gridViewSpacing,
         crossAxisSpacing: AppSizes.gridViewSpacing,
-        mainAxisExtent: mainAxisCount,
+        mainAxisExtent: mainAxisExtent,
       ),
       itemBuilder: itemBuilder,
     );

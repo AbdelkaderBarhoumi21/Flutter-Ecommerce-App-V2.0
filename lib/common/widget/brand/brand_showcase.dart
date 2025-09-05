@@ -22,6 +22,7 @@ class AppBrandShowCase extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AppBrandCard(showBorder: false),
+          const SizedBox(height: AppSizes.spaceBtwItems),
           Row(
             children: images
                 .map((image) => buildBrandImage(dark, image))
