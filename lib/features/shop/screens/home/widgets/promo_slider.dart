@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/images/rounded_image.dart';
 import 'package:flutter_ecommerce_app_v2/features/shop/controllers/home/home_controller.dart';
-import 'package:flutter_ecommerce_app_v2/features/shop/screens/widgets/banner_dot_navigation.dart';
+import 'package:flutter_ecommerce_app_v2/features/shop/screens/home/widgets/banner_dot_navigation.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/sizes.dart';
 

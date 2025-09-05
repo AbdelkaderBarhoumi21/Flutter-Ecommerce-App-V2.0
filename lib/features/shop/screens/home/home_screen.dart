@@ -3,11 +3,11 @@ import 'package:flutter_ecommerce_app_v2/common/widget/layouts/grid_layout.dart'
 import 'package:flutter_ecommerce_app_v2/common/widget/products/products_card/product_vertical_card.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/texts/section_heading.dart';
 import 'package:flutter_ecommerce_app_v2/features/shop/controllers/home/home_controller.dart';
-import 'package:flutter_ecommerce_app_v2/features/shop/screens/widgets/home_categories.dart';
+import 'package:flutter_ecommerce_app_v2/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/textfields/search_bar.dart';
-import 'package:flutter_ecommerce_app_v2/features/shop/screens/widgets/home_appbar.dart';
-import 'package:flutter_ecommerce_app_v2/features/shop/screens/widgets/primary_header_container.dart';
-import 'package:flutter_ecommerce_app_v2/features/shop/screens/widgets/promo_slider.dart';
+import 'package:flutter_ecommerce_app_v2/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:flutter_ecommerce_app_v2/features/shop/screens/home/widgets/primary_header_container.dart';
+import 'package:flutter_ecommerce_app_v2/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/image.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/texts.dart';
@@ -30,6 +30,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: AppSizes.homePrimaryHeaderHeight + 10),
                 //Primary Header Container
                 AppPrimaryHeaderContainer(
+                  height: AppSizes.homePrimaryHeaderHeight,
                   child: Column(
                     children: [
                       AppHomeAppBar(),

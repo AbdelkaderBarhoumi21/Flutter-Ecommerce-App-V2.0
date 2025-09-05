@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/custom_shapes/rounded_container.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/icons/circular_icon.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/images/rounded_image.dart';
+import 'package:flutter_ecommerce_app_v2/common/widget/texts/brand_title_text.dart';
+import 'package:flutter_ecommerce_app_v2/common/widget/texts/brand_title_verify_icon.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/texts/product_price.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/texts/product_title_text.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/colors.dart';
+import 'package:flutter_ecommerce_app_v2/utils/constants/enums.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/image.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app_v2/utils/helpers/helper_functions.dart';
@@ -21,7 +24,7 @@ class AppProductCardVertical extends StatelessWidget {
       child: Container(
         width: 180,
 
-        padding: const EdgeInsets.all(1),
+        // padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           // boxShadow: AppShadow.verticalProductShadow,
           borderRadius: BorderRadius.circular(AppSizes.productImageRadius),
@@ -41,7 +44,6 @@ class AppProductCardVertical extends StatelessWidget {
                   //discount tag
                   Positioned(
                     top: 12.0,
-
                     child: AppRoundedContainer(
                       radius: AppSizes.sm,
                       backgroundColor: AppColors.primary.withValues(alpha: 0.8),
@@ -83,22 +85,7 @@ class AppProductCardVertical extends StatelessWidget {
                   ),
                   SizedBox(height: AppSizes.spaceBtwItems / 2),
                   //product brand
-                  Row(
-                    children: [
-                      Text(
-                        'Bata',
-                        style: Theme.of(context).textTheme.labelMedium,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      SizedBox(width: AppSizes.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: AppColors.primary,
-                        size: AppSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  AppBrandTitleVerifyIcon(title: 'Bata'),
                 ],
               ),
             ),

@@ -5,13 +5,19 @@ import 'package:flutter_ecommerce_app_v2/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/sizes.dart';
 
 class AppPrimaryHeaderContainer extends StatelessWidget {
-  const AppPrimaryHeaderContainer({super.key, required this.child});
+  const AppPrimaryHeaderContainer({
+    super.key,
+    required this.child,
+    required this.height,
+  });
   final Widget child;
+  final double height;
   @override
   Widget build(BuildContext context) {
     return AppRoundedEgdesContainer(
       child: Container(
-        height: AppSizes.homePrimaryHeaderHeight,
+        // height: AppSizes.homePrimaryHeaderHeight,
+        height: height,
         color: AppColors.primary,
         child: Stack(
           children: [

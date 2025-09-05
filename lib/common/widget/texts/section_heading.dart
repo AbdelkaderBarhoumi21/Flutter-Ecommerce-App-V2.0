@@ -19,11 +19,12 @@ class AppSectionHeading extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Theme.of(context).textTheme.headlineSmall,maxLines: 1,
+          style: Theme.of(context).textTheme.headlineSmall,
+          maxLines: 1,
           overflow: TextOverflow.clip,
         ),
         TextButton(
-          onPressed:onPressed,
+          onPressed: onPressed,
           child: Text(
             buttonTitle,
             style: Theme.of(
