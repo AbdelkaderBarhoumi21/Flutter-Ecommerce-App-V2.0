@@ -4,7 +4,7 @@ import 'package:flutter_ecommerce_app_v2/utils/constants/colors.dart';
 class AppChipTheme {
   AppChipTheme._();
 
-   static ChipThemeData lightChipTheme = ChipThemeData(
+  static ChipThemeData lightChipTheme = ChipThemeData(
     disabledColor: AppColors.grey.withValues(alpha: 0.4),
     labelStyle: const TextStyle(color: AppColors.black),
     selectedColor: AppColors.primary,

@@ -7,11 +7,13 @@ class AppSectionHeading extends StatelessWidget {
     this.textColor,
     this.buttonTitle = 'View All',
     this.onPressed,
+    this.showActionsButtons = true,
     super.key,
   });
   final Color? textColor;
   final String title, buttonTitle;
   final VoidCallback? onPressed;
+  final bool showActionsButtons;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -23,15 +25,16 @@ class AppSectionHeading extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.clip,
         ),
-        TextButton(
-          onPressed: onPressed,
-          child: Text(
-            buttonTitle,
-            style: Theme.of(
-              context,
-            ).textTheme.bodySmall!.apply(color: AppColors.primary),
+        if (showActionsButtons)
+          TextButton(
+            onPressed: onPressed,
+            child: Text(
+              buttonTitle,
+              style: Theme.of(
+                context,
+              ).textTheme.bodySmall!.apply(color: AppColors.primary),
+            ),
           ),
-        ),
       ],
     );
   }
