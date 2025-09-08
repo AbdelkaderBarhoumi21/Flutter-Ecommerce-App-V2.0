@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_app_v2/common/widget/button/elevated_button.dart';
 import 'package:flutter_ecommerce_app_v2/common/widget/icons/circular_icon.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app_v2/utils/constants/sizes.dart';

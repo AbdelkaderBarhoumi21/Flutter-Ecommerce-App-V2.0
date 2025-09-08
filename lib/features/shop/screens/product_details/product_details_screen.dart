@@ -29,6 +29,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 children: [
                   //price title stock and brand
                   AppProductMetaData(),
+                  SizedBox(height: AppSizes.spaceBtwSections),
                   //price title stock brand
                   //attributes
                   AppProductAttributes(),

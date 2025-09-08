@@ -52,10 +52,10 @@ class AppProductMetaData extends StatelessWidget {
             IconButton(onPressed: () {}, icon: Icon(Icons.share)),
           ],
         ),
-        SizedBox(width: AppSizes.spaceBtwItems / 1.5),
+        SizedBox(height: AppSizes.spaceBtwItems / 1.5),
         //product title
         AppProductTitleText(title: "Apple iPhone 11"),
-        SizedBox(width: AppSizes.spaceBtwItems / 1.5),
+        SizedBox(height: AppSizes.spaceBtwItems / 1.5),
         //product status
         Row(
           children: [
@@ -64,7 +64,7 @@ class AppProductMetaData extends StatelessWidget {
             Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
           ],
         ),
-        SizedBox(width: AppSizes.spaceBtwItems / 1.5),
+        SizedBox(height: AppSizes.spaceBtwItems / 1.5),
         //product brand image with title
         Row(
           children: [
