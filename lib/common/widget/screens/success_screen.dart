@@ -47,7 +47,7 @@ class SuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.bodySmall,
               ),
               //continiue button
-              SizedBox(height: AppSizes.spaceBtwItems),
+              SizedBox(height: AppSizes.spaceBtwSections),
               AppElevatedButton(
                 onPressed: onTap,
                 child: Text(AppTexts.Continue),
