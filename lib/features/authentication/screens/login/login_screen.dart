@@ -13,7 +13,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(automaticallyImplyLeading: false),
       body: SingleChildScrollView(
         child: Padding(
           padding: AppPadding.screenPadding,

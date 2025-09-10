@@ -64,7 +64,7 @@ class AppLoginForm extends StatelessWidget {
         ),
         SizedBox(height: AppSizes.spaceBtwItems / 2),
         AppOutlineButton(
-          onPressed: () => Get.to(SignupScreen()),
+          onPressed: () => Get.to(() => SignupScreen()),
           child: Text(AppTexts.createAccount),
         ),
       ],
